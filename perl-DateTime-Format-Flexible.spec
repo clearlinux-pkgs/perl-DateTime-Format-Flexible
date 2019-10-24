@@ -4,14 +4,14 @@
 #
 Name     : perl-DateTime-Format-Flexible
 Version  : 0.32
-Release  : 2
+Release  : 3
 URL      : https://cpan.metacpan.org/authors/id/T/TH/THINC/DateTime-Format-Flexible-0.32.tar.gz
 Source0  : https://cpan.metacpan.org/authors/id/T/TH/THINC/DateTime-Format-Flexible-0.32.tar.gz
 Summary  : 'DateTime::Format::Flexible - Flexibly parse strings and turn them into DateTime objects.'
 Group    : Development/Tools
 License  : Artistic-1.0-Perl GPL-2.0
-Requires: perl-DateTime-Format-Flexible-data = %{version}-%{release}
 Requires: perl-DateTime-Format-Flexible-license = %{version}-%{release}
+Requires: perl-DateTime-Format-Flexible-perl = %{version}-%{release}
 BuildRequires : buildreq-cpan
 BuildRequires : perl(DateTime)
 BuildRequires : perl(DateTime::Format::Builder)
@@ -30,18 +30,9 @@ NAME
 DateTime::Format::Flexible - DateTime::Format::Flexible - Flexibly parse
 strings and turn them into DateTime objects.
 
-%package data
-Summary: data components for the perl-DateTime-Format-Flexible package.
-Group: Data
-
-%description data
-data components for the perl-DateTime-Format-Flexible package.
-
-
 %package dev
 Summary: dev components for the perl-DateTime-Format-Flexible package.
 Group: Development
-Requires: perl-DateTime-Format-Flexible-data = %{version}-%{release}
 Provides: perl-DateTime-Format-Flexible-devel = %{version}-%{release}
 Requires: perl-DateTime-Format-Flexible = %{version}-%{release}
 
@@ -55,6 +46,15 @@ Group: Default
 
 %description license
 license components for the perl-DateTime-Format-Flexible package.
+
+
+%package perl
+Summary: perl components for the perl-DateTime-Format-Flexible package.
+Group: Default
+Requires: perl-DateTime-Format-Flexible = %{version}-%{release}
+
+%description perl
+perl components for the perl-DateTime-Format-Flexible package.
 
 
 %prep
@@ -97,14 +97,6 @@ find %{buildroot} -type f -name '*.bs' -empty -exec rm -f {} ';'
 %files
 %defattr(-,root,root,-)
 
-%files data
-%defattr(-,root,root,-)
-/usr/lib/perl5/vendor_perl/5.28.2/DateTime/Format/Flexible.pm
-/usr/lib/perl5/vendor_perl/5.28.2/DateTime/Format/Flexible/lang.pm
-/usr/lib/perl5/vendor_perl/5.28.2/DateTime/Format/Flexible/lang/de.pm
-/usr/lib/perl5/vendor_perl/5.28.2/DateTime/Format/Flexible/lang/en.pm
-/usr/lib/perl5/vendor_perl/5.28.2/DateTime/Format/Flexible/lang/es.pm
-
 %files dev
 %defattr(-,root,root,-)
 /usr/share/man/man3/DateTime::Format::Flexible.3
@@ -116,3 +108,11 @@ find %{buildroot} -type f -name '*.bs' -empty -exec rm -f {} ';'
 %files license
 %defattr(0644,root,root,0755)
 /usr/share/package-licenses/perl-DateTime-Format-Flexible/6b487264931a742fc55971d43c27b8decdf4c8bb
+
+%files perl
+%defattr(-,root,root,-)
+/usr/lib/perl5/vendor_perl/5.28.2/DateTime/Format/Flexible.pm
+/usr/lib/perl5/vendor_perl/5.28.2/DateTime/Format/Flexible/lang.pm
+/usr/lib/perl5/vendor_perl/5.28.2/DateTime/Format/Flexible/lang/de.pm
+/usr/lib/perl5/vendor_perl/5.28.2/DateTime/Format/Flexible/lang/en.pm
+/usr/lib/perl5/vendor_perl/5.28.2/DateTime/Format/Flexible/lang/es.pm
