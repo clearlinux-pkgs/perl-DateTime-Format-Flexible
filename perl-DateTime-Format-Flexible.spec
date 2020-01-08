@@ -4,7 +4,7 @@
 #
 Name     : perl-DateTime-Format-Flexible
 Version  : 0.32
-Release  : 3
+Release  : 4
 URL      : https://cpan.metacpan.org/authors/id/T/TH/THINC/DateTime-Format-Flexible-0.32.tar.gz
 Source0  : https://cpan.metacpan.org/authors/id/T/TH/THINC/DateTime-Format-Flexible-0.32.tar.gz
 Summary  : 'DateTime::Format::Flexible - Flexibly parse strings and turn them into DateTime objects.'
@@ -59,6 +59,7 @@ perl components for the perl-DateTime-Format-Flexible package.
 
 %prep
 %setup -q -n DateTime-Format-Flexible-0.32
+cd %{_builddir}/DateTime-Format-Flexible-0.32
 
 %build
 export http_proxy=http://127.0.0.1:9/
@@ -111,8 +112,8 @@ find %{buildroot} -type f -name '*.bs' -empty -exec rm -f {} ';'
 
 %files perl
 %defattr(-,root,root,-)
-/usr/lib/perl5/vendor_perl/5.28.2/DateTime/Format/Flexible.pm
-/usr/lib/perl5/vendor_perl/5.28.2/DateTime/Format/Flexible/lang.pm
-/usr/lib/perl5/vendor_perl/5.28.2/DateTime/Format/Flexible/lang/de.pm
-/usr/lib/perl5/vendor_perl/5.28.2/DateTime/Format/Flexible/lang/en.pm
-/usr/lib/perl5/vendor_perl/5.28.2/DateTime/Format/Flexible/lang/es.pm
+/usr/lib/perl5/vendor_perl/5.30.1/DateTime/Format/Flexible.pm
+/usr/lib/perl5/vendor_perl/5.30.1/DateTime/Format/Flexible/lang.pm
+/usr/lib/perl5/vendor_perl/5.30.1/DateTime/Format/Flexible/lang/de.pm
+/usr/lib/perl5/vendor_perl/5.30.1/DateTime/Format/Flexible/lang/en.pm
+/usr/lib/perl5/vendor_perl/5.30.1/DateTime/Format/Flexible/lang/es.pm
