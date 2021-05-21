@@ -112,8 +112,8 @@ find %{buildroot} -type f -name '*.bs' -empty -exec rm -f {} ';'
 
 %files perl
 %defattr(-,root,root,-)
-/usr/lib/perl5/vendor_perl/5.32.1/DateTime/Format/Flexible.pm
-/usr/lib/perl5/vendor_perl/5.32.1/DateTime/Format/Flexible/lang.pm
-/usr/lib/perl5/vendor_perl/5.32.1/DateTime/Format/Flexible/lang/de.pm
-/usr/lib/perl5/vendor_perl/5.32.1/DateTime/Format/Flexible/lang/en.pm
-/usr/lib/perl5/vendor_perl/5.32.1/DateTime/Format/Flexible/lang/es.pm
+/usr/lib/perl5/vendor_perl/5.34.0/DateTime/Format/Flexible.pm
+/usr/lib/perl5/vendor_perl/5.34.0/DateTime/Format/Flexible/lang.pm
+/usr/lib/perl5/vendor_perl/5.34.0/DateTime/Format/Flexible/lang/de.pm
+/usr/lib/perl5/vendor_perl/5.34.0/DateTime/Format/Flexible/lang/en.pm
+/usr/lib/perl5/vendor_perl/5.34.0/DateTime/Format/Flexible/lang/es.pm
