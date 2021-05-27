@@ -1,10 +1,9 @@
-0.32
+0.33
 perl(DateTime)
 perl(DateTime::Format::Builder)
 perl(DateTime::Format::Strptime)
 perl(DateTime::TimeZone)
 perl(List::MoreUtils)
-perl(Module::Pluggable)
 perl(Params::Validate)
 perl(Sub::Uplevel)
 perl(Test::Exception)
