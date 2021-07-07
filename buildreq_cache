@@ -1,4 +1,4 @@
-0.33
+0.34
 perl(DateTime)
 perl(DateTime::Format::Builder)
 perl(DateTime::Format::Strptime)
