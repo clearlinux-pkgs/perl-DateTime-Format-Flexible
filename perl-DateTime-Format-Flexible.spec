@@ -6,10 +6,10 @@
 # autospec commit: f35655a
 #
 Name     : perl-DateTime-Format-Flexible
-Version  : 0.35
-Release  : 22
-URL      : https://cpan.metacpan.org/authors/id/T/TH/THINC/DateTime-Format-Flexible-0.35.tar.gz
-Source0  : https://cpan.metacpan.org/authors/id/T/TH/THINC/DateTime-Format-Flexible-0.35.tar.gz
+Version  : 0.36
+Release  : 23
+URL      : https://cpan.metacpan.org/authors/id/T/TH/THINC/DateTime-Format-Flexible-0.36.tar.gz
+Source0  : https://cpan.metacpan.org/authors/id/T/TH/THINC/DateTime-Format-Flexible-0.36.tar.gz
 Summary  : 'DateTime::Format::Flexible - Flexibly parse strings and turn them into DateTime objects.'
 Group    : Development/Tools
 License  : Artistic-1.0-Perl GPL-2.0
@@ -62,10 +62,10 @@ perl components for the perl-DateTime-Format-Flexible package.
 
 
 %prep
-%setup -q -n DateTime-Format-Flexible-0.35
-cd %{_builddir}/DateTime-Format-Flexible-0.35
+%setup -q -n DateTime-Format-Flexible-0.36
+cd %{_builddir}/DateTime-Format-Flexible-0.36
 pushd ..
-cp -a DateTime-Format-Flexible-0.35 buildavx2
+cp -a DateTime-Format-Flexible-0.36 buildavx2
 popd
 
 %build
