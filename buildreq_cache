@@ -1,9 +1,8 @@
-0.36
+0.37
 perl(DateTime)
 perl(DateTime::Format::Builder)
 perl(DateTime::Format::Strptime)
 perl(DateTime::TimeZone)
-perl(List::MoreUtils)
 perl(Sub::Uplevel)
 perl(Test::Exception)
 perl(Test::MockTime)
