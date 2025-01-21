@@ -7,7 +7,7 @@
 #
 Name     : perl-DateTime-Format-Flexible
 Version  : 0.37
-Release  : 24
+Release  : 25
 URL      : https://cpan.metacpan.org/authors/id/T/TH/THINC/DateTime-Format-Flexible-0.37.tar.gz
 Source0  : https://cpan.metacpan.org/authors/id/T/TH/THINC/DateTime-Format-Flexible-0.37.tar.gz
 Summary  : 'DateTime::Format::Flexible - Flexibly parse strings and turn them into DateTime objects.'
